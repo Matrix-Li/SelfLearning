@@ -20,7 +20,7 @@ services:                       #服务
     container_name: flask_demo  #启动后容器名称
     build: .                    #使用当前目构建镜像
     ports:                      #端口
-     - "5000:5000"              #看陈一个数组
+     - "5000:5000"              #看成一个数组
 ```
 
 Dockerfile
