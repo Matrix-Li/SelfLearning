@@ -7,6 +7,7 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
 Login Succeeded
 matrix@DESKTOP-2IPL1MC:~$ docker pull 192.168.0.112:8888/cicd/nginx-ingress-controller@sha256:4f5df867e9367f76acfc39a0f85487dc63526e27735fa82fc57d6a652bafbbf6^C
+matrix@DESKTOP-2IPL1MC:~$ ^C
 matrix@DESKTOP-2IPL1MC:~$ ls
 flask_demo  gpg:Zone.Identifier  myip
 matrix@DESKTOP-2IPL1MC:~$ docker images
