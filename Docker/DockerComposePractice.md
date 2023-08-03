@@ -50,6 +50,9 @@ Docker Compose version v2.20.1
 matrix@DESKTOP-2IPL1MC:composetest$ docker-compose up -d
 [+] Running 1/1
  ✔ Container flask_demo  Started
+matrix@DESKTOP-2IPL1MC:composetest$ docker-compose ps -a
+NAME                IMAGE               COMMAND             SERVICE             CREATED             STATUS              PORTS
+flask_demo          composetest-web     "flask run"         web                 5 minutes ago       Up 5 minutes        0.0.0.0:5000->5000/tcp, :::5000->5000/tcp
 matrix@DESKTOP-2IPL1MC:composetest$ docker-compose logs --tail=100 -f web
 flask_demo  |  * Serving Flask app 'app.py'
 flask_demo  |  * Debug mode: off
