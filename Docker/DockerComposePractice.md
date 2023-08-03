@@ -14,13 +14,13 @@ def hello():
 docker-compose.yml
 
 ```yaml
-version: '3'
-services:
-  web:
-    container_name: flask_demo
-    build: .
-    ports:
-     - "5000:5000"
+version: '3'                    #可以看成一个json文件
+services:                       #服务
+  web:                          #服务名称
+    container_name: flask_demo  #启动后容器名称
+    build: .                    #使用当前目构建镜像
+    ports:                      #端口
+     - "5000:5000"              #看陈一个数组
 ```
 
 Dockerfile
