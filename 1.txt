@@ -1,0 +1,1000 @@
+    1  docker-compose restart sset-nginx
+    2  docker-compose stop sset-nginx
+    3  docker-compose start sset-nginx
+    4  docker-compose up -d  sset-nginx
+    5  docker stop 482227bc18aef36a04572eccf4ed5cb36c048637e5f274377a8b4cadcab9d3c6
+    6  docker rm  482227bc18aef36a04572eccf4ed5cb36c048637e5f274377a8b4cadcab9d3c6
+    7  docker-compose up -d  sset-nginx
+    8  ls
+    9  cd sset
+   10  ;s
+   11  ls
+   12  cd ..
+   13  ls
+   14  docker-compose stop sset-nginx
+   15  docker-compose rm -f  sset-nginx
+   16  docker-compose up -d  sset-nginx
+   17  ls
+   18  cd sset
+   19  ls
+   20  cd nginx/
+   21  ls
+   22  cd html/
+   23  ls
+   24  cd ssop/
+   25  ls
+   26  ll -a
+   27  ls
+   28  cd ..
+   29  ls
+   30  cd ..
+   31  ls
+   32  cd ..
+   33  ls
+   34  docker-compose rm -f sset-nginx
+   35  docker-compose  up -d   sset-nginx
+   36  docker rm a7095904bcf0c28e21dfc3b5a48910fa23a2c2bde576087e54386fa34450f572
+   37  docker stop  a7095904bcf0c28e21dfc3b5a48910fa23a2c2bde576087e54386fa34450f572
+   38  docker rm  a7095904bcf0c28e21dfc3b5a48910fa23a2c2bde576087e54386fa34450f572
+   39  docker-compose  up -d   sset-nginx
+   40  ls
+   41  cd kafak_dep/
+   42  ls
+   43  cd kafka/
+   44  ls
+   45  systemctl enable rpcbind
+   46  systemctl enable nfs-server
+   47  showmount -e 192.168.0.112
+   48  cd /home/
+   49  ls
+   50  mkdir /home/nfs/jenkins/
+   51  mkdir /home/nfs/jenkins/ -p
+   52  vim /etc/fstab
+   53  mount -a
+   54  mount -e
+   55  show mount -e
+   56  showmount -e
+   57  df -Th
+   58  kubectl get pod -A
+   59  ls
+   60  kubectl get nodes
+   61  systemctl status kubelet
+   62  kubectl get nodes
+   63  systemctl status kubelet
+   64  systemctl restart kubelet
+   65  systemctl status kubelet
+   66  kubelet
+   67  ls
+   68  kubectl get nodes
+   69  cd /home
+   70  ls
+   71  cd .kube
+   72  ls
+   73  cd /etc/
+   74  ls
+   75  df -h
+   76  ls
+   77  cd /opt
+   78  ls
+   79  cd cni/
+   80  ls
+   81  cd ..
+   82  ls
+   83  cd ..
+   84  ls
+   85  cd /root
+   86  ls
+   87  rm -f flexvolback.tar 
+   88  cd ..
+   89  df -h
+   90  cd ..4
+   91  ls
+   92  docker images  -a
+   93  ls
+   94  df -h
+   95  docker ps
+   96  cd /home
+   97  ls
+   98  cd ..
+   99  ls
+  100  cd /home
+  101  ls
+  102  cd ..
+  103  ls
+  104  cd /opt
+  105  ls
+  106  cd cni/
+  107  ls
+  108  cd bin/
+  109  ls
+  110  cd ..
+  111  c ..
+  112  ls
+  113  cd ..
+  114  ls
+  115  cd containerd/
+  116  ls
+  117  cd /home
+  118  ls
+  119  reboot
+  120  ls
+  121  cd 
+  122  cd ..
+  123  docker images
+  124  docker images | grep seu
+  125  kubectl get pods | grep seu
+  126  kubectl get pods | grep radio
+  127  kubectl get pods | grep radio -n xw-simulation
+  128  kubectl get pods | grep radio -A
+  129  kubectl get pods -A | grep 
+  130  kubectl delete deploy radiolink-b4f39c08b112459c8df7ad6304f003ad-6dd7d9c86-zpq25 -n xw-simulation
+  131  root
+  132  cd /home/sset
+  133  ls
+  134  docker-compose stop sset-simulation
+  135  docker-compose restart sset-simulation
+  136  docker-compose logs -f --tail=100  sset-simulation
+  137  ls
+  138  docker images | grep power
+  139  docker tag satellitepower:v1.0.0 192.168.0.112:8888/simulation/satellitepower:v1.0.0
+  140  docker push 192.168.0.112:8888/simulation/satellitepower:v1.0.0
+  141  docker images | grep ue
+  142  docker images | grep link
+  143  docker images | grep radio
+  144  docker images
+  145  docker-compose logs -f --tail=100 sset-simulation
+  146  kubectl get pods -n xw-simulation
+  147  docker-compose logs -f --tail=100 sset-simulation
+  148  kubectl get nodes
+  149  df -Th
+  150  kubectl get pod -A
+  151  kubectl  taint nodes k8s-node1
+  152  kubectl  taint nodes k8s-node1 | grep Taints
+  153  kubectl  taint nodes k8s-master | grep Taints
+  154  kubectl describe nodes k8s-master | grep Taints
+  155  kubectl describe nodes k8s-node1 | grep Taints
+  156  kubectl describe nodes k8s-master | grep Taints
+  157  kubectl taint node k8s-master node-role.kubernetes.io/master:NoSchedule-
+  158  kubectl describe nodes k8s-master | grep Taints
+  159  kubectl get pod -A
+  160  kubectl describe nodes k8s-master | grep Taints
+  161  kubectl get pod -A
+  162  kubectl describe nodes k8s-master | grep Taints
+  163  kubectl get pod -A
+  164  kubectl get pod -ALa
+  165  Qa
+  166  kubectl get pod -ALa
+  167  kubectl logs f satellitepower-ffdcfa0607be4e3dbbe9af41a29b1211-6db586f95b2st6n  n xw-simulation
+  168  kubectl logs -f satellitepower-ffdcfa0607be4e3dbbe9af41a29b1211-6db586f95b2st6n  n xw-simulation
+  169  kubectl logs -f satellitepower-ffa2dbb49adc40f2b6c52ebe9f00384f-69ffb97db6l8mmq   n xw-simulation
+  170  kubectl describe pod satellitepower-ffa2dbb49adc40f2b6c52ebe9f00384f-69ffb97db6l8mmq   n xw-simulation
+  171  kubectl get pod -A
+  172  kubectl describe nodes k8s-master | grep Taints
+  173  kubectl describe nodes k8s-node1 | grep Taints
+  174  kubectl get pod -A
+  175  df h
+  176  df -h
+  177  free
+  178  ls
+  179  kubectl get pod -A
+  180  2ll
+  181  ll
+  182  docker ps
+  183  ls
+  184  cd /home
+  185  ls
+  186  cd sset
+  187  ls
+  188  cd kafak_dep/
+  189  la
+  190  ls
+  191  cd kafka/
+  192  ls
+  193  vim docker-compose.yml 
+  194  cd /home
+  195  ls
+  196  vim docker-compose.yml 
+  197  docker rm -f sset-model
+  198  docker-compose up sset-model
+  199  vim docker-compose.yml 
+  200  docker-compose up sset-model
+  201  vim docker-compose.yml 
+  202  docker-compose up sset-model
+  203  docker-compose up -d sset-model
+  204  kubectl get nodes
+  205  systemctl status kubelet
+  206  journalctl -xefu kubelet
+  207  docker ps -a
+  208  docker ps -a | grep kube
+  209  docker ps  | grep kube
+  210  journalctl -xefu kubelet
+  211  ls
+  212  docker-compose ls
+  213  docker images | grep se
+  214  docker tag seu:1.0.0 192.168.0.112:8888/simulation/seu:v1.0.0
+  215  docker images | grep seu
+  216  docker push 192.168.0.112:8888/simulation/seu:v1.0.0
+  217  docker save -o seu.tar seu:1.0.0
+  218  ls
+  219  pwd
+  220  scp seu.tar root@192.168.0.112:/home/model
+  221  ls
+  222  docker ps
+  223  df -h
+  224  kubectl get pod -A
+  225  df -h
+  226  docker ps
+  227  df 
+  228  journalctl -f -u kubelet.service 
+  229  journalctl -xeu kubelet
+  230  vim /etc/hosts
+  231  journalctl -xeu kubelet
+  232  kubectl get nodes
+  233  cd /home
+  234  ls
+  235  docker-compose logs -f sset-simulation
+  236  ls
+  237  vim docker-compose.yml 
+  238  docker logs -f sset-simulation
+  239  docker logs -200f sset-simulation
+  240  docker logs -f sset-simulation
+  241  ls
+  242  kubectl get pod -A
+  243  ls
+  244  kubectl get pod -A
+  245  systemctl status kubelet 
+  246  df
+  247  kubelet
+  248  vim /etc/docker/daemon.json
+  249  journalctl -xeu kubelet
+  250  journalctl -xeu kubelet > 1.txt
+  251  vi 1.txt 
+  252  journalctl -u kubelet 
+  253  journalctl -u kubelet > 2.txt
+  254  vi 2.txt 
+  255  ls
+  256  vim docker-compose.yml 
+  257  cd sset/kafak_dep/kafka/
+  258  ls
+  259  vim docker-compose.yml 
+  260  ls
+  261  kubectl get nodes
+  262  vim /etc/fstab
+  263  showmonut e
+  264  showmonut -e
+  265  mount -a
+  266  showmount -e 192.168.0.112
+  267  ls
+  268  umount /home/nfs/jenkins/
+  269  umount nfs
+  270  umount nfs1
+  271  mount -a
+  272  showmount -e 192.168.0.112
+  273  df -h
+  274  df
+  275  kubectl get nodes
+  276  systemctl status kubelet
+  277  kubectl get pod -A
+  278  systemctl daemon-reload
+  279  systemctl restart docker
+  280  systemctl restart kubelet
+  281  kubectl get pod -A
+  282  kubectl get nodes
+  283  ping 192.168.0.11
+  284  ping 192.168.0.112
+  285  telnet 192.168.0.112:6443
+  286  cd /home
+  287  vim docker-compose.yml 
+  288  reboot
+  289  kubectl get nodes
+  290  df 
+  291  kubectl get pod A
+  292  kubectl get pod -A
+  293  cd kubectl get nodes
+  294  kubectl get nodes
+  295  kubectl delete pod ks-apiserver-8d86845bb-kmc2n -n kubesphere-system
+  296  ls
+  297  cd ..
+  298  ls
+  299  cd home
+  300  ls
+  301  cd sset
+  302  ls
+  303  cd  ..
+  304  ls
+  305  cd /opt
+  306  ls
+  307  cd /home
+  308  ls
+  309  cd k8s/
+  310  ls
+  311  cd ..
+  312  ls
+  313  docker ps | grep mongo
+  314  docker images | grep mongo
+  315  docker save -o sset-mongo.tar sset-mongo
+  316  rm -f /usr/lib/systemd/system/docker.service 
+  317  ls
+  318  systemctl restart docker
+  319  systemctl daemon-reload
+  320  systemctl restart docker
+  321  docker ps
+  322  docker ps | grep gate
+  323  docker logs -f sset-gateway 
+  324  docker restart  sset-gateway 
+  325  docker restart  sset-auth
+  326  docker logs -f   sset-auth
+  327  docker logs -f   sset-gateway
+  328  kubectl get pod -A
+  329  df
+  330  kubectl get pod -A
+  331  df
+  332  kubectl get pod -A
+  333  docker ps
+  334  kubectl get pod -A
+  335  docker ps
+  336  kubectl get pod -A
+  337  docker ps
+  338  kubectl get nodes
+  339  kubectl get pod -A
+  340  docker restart sset-gateway
+  341  docker restart sset-auth
+  342  kubectl get pod -A
+  343  docker container ls
+  344  whereis docker-compose
+  345  cd /home
+  346  ls
+  347  docker-compose
+  348  docker-compose logs -f sset-simulation
+  349  docker logs -f sset-simulation
+  350  docker logs -f --tail=200 sset-simulation
+  351  ping 192.168.0.111
+  352  ls
+  353  cd /home
+  354  ls
+  355  docker images ls --name
+  356  docker images ls --help
+  357  docker images ls -a
+  358  docker images
+  359  docker container ls -a
+  360  docker images
+  361  docker-compose ps -a
+  362  docker-compose stop sset-auth
+  363  docker-compose ps -a
+  364  docker-compose restart sset-auth
+  365  docker-compose ps -a
+  366  docker images
+  367  docker-compose ps -a
+  368  docker-compose up -d sset-gateway
+  369  docker container ls 79f6
+  370  docker container ls -a
+  371  docker ps --format={{.Names}}
+  372  docker ps -a --filter "status=exited"
+  373  docker top
+  374  docker top -a
+  375  docker top --help
+  376  docker ps --filter "ancestor=sset-gateway"
+  377  docker-compose up -d sset-gateway
+  378  docker ps 79f6
+  379  docker ps --help
+  380  docker ps -a
+  381  docker images
+  382  clear
+  383  docker images
+  384  docker tag sset-gateway:v0.4 192.168.0.112:8888/sset/sset-gateway:v0.5
+  385  docker images
+  386  docker push 192.168.0.112:8888/sset/sset-gateway:v0.5
+  387  docker tag 192.168.0.112:8888/sset/sset-gateway:v0.5 sset-gateway:v0.4
+  388  docker images
+  389  docker images | grep sset
+  390  docker ps
+  391  docker images | grep sset
+  392  docker image rm 192.168.0.112:8888/sset/sset-gateway:v0.5
+  393  docker images | grep sset
+  394  docker pull 192.168.0.112:8888/sset/sset-gateway@sha256:9e4700fb2fcded0e2cbcb4c299a256e98a032fcda1c1b88c132104af9424876c
+  395  docker images | grep sset
+  396  docker tag 192.168.0.112:8888/sset/sset-gateway 192.168.0.112:8888/sset/sset-gateway:v0.5
+  397  docker image rm 192.168.0.112:8888/sset/sset-gateway
+  398  docker-compose up -d sset-gateway
+  399  docker-compose stop sset-gateway
+  400  docker-compose up -d sset-gateway
+  401  docker container 
+  402  docker container stop 79f6
+  403  docker-compose up -d sset-gateway
+  404  docker container rrm 79f6
+  405  docker container rm 79f6
+  406  docker-compose up -d sset-gateway
+  407  docker container ls
+  408  docker ps -n=2
+  409  docker ps -f "image=sset-gateway:v0.4"
+  410  docker ps
+  411  docker ps --format "table"
+  412  docker ps  -a --format "table {{.Names}}"
+  413  pwd
+  414  cd /home/seu/
+  415  ls
+  416  vim radiolink.yaml 
+  417  ls
+  418  kubectl get pods -A
+  419  kubectl get pods -A | grep radiolink
+  420  docker images | gerp seu
+  421  docker images | grep seu
+  422  docker images
+  423  ls
+  424  vim radiolink.yaml 
+  425  ls
+  426  vim radiolink
+  427  vim radiolink.yaml 
+  428  kubectl apply -f radiolink.yaml 
+  429  vim radiolink.yaml 
+  430  kubectl apply -f radiolink.yaml 
+  431  vim radiolink.yaml 
+  432  kubectl apply -f radiolink.yaml 
+  433  vim radiolink.yaml 
+  434  kubectl apply -f radiolink.yaml 
+  435  vim radiolink.yaml 
+  436  kubectl apply -f radiolink.yaml 
+  437  kubectl get pods -A | grep radiolink
+  438  kubectl delete deploy radiolink-58cc7df84-vccln -n xw-simulation
+  439  kubectl delete deploy radiolink -n xw-simulation
+  440  kubectl get pods -A | grep radiolink
+  441  vim radiolink.yaml 
+  442  kubectl apply -f radiolink.yaml 
+  443  kubectl apply -f radiolink.yaml 
+  444  kubectl get pods -A | grep radiolink
+  445  kubectl delete deploy radiolink -n xw-simulation
+  446  vim radiolink.yaml 
+  447  kubectl delete deploy radiolink -n xw-simulation
+  448  kubectl apply -f radiolink.yaml 
+  449  kubectl delete deploy radiolink -n xw-simulation
+  450  vim radiolink.yaml 
+  451  kubectl apply -f radiolink.yaml 
+  452  kubectl get pods -A | grep radiolink
+  453  kubectl delete deploy radiolink -n xw-simulation
+  454  kubectl get pods -A | grep radiolink
+  455  vim radiolink.yaml 
+  456  ls
+  457  cd ~
+  458  ls
+  459  cd ..
+  460  ls
+  461  cd home/seu/
+  462  ls
+  463  docker images | grep seu
+  464  docker images | grep radiolink
+  465  docker images | grep radio
+  466  docker load < radiolink2.tar 
+  467  docker images | grep radio
+  468  docker images | grep seu
+  469  docker load < radiolink.tar 
+  470  docker images | grep seu
+  471  ls
+  472  vim radiolink.tar 
+  473  docker ps  -a --format "table {{.Names}}"
+  474  docker ps | grep sset
+  475  docker ps  -a --format "table {{.Names}}" | grep sset
+  476  docker images
+  477  docker images | grep sset
+  478  docker container ls -a
+  479  docker-compose up -d sset-gateway
+  480  cd /home
+  481  docker-compose up -d sset-gateway
+  482  docker images
+  483  docker image tag 397d3d611d44 sset-gateway:v0.4
+  484  docker-compose up -d sset-gateway
+  485  docker-compose up sset-gateway
+  486  docker-compose up -d sset-gateway
+  487  docker images
+  488  docker container ls -a
+  489  docker container ls -a | grep gateway
+  490  docker images
+  491  docker image tag 397d3d611d44 sset-gateway:v0.4
+  492  docker-compose up -d sset-gateway
+  493  docker ps  -a --format "table {{.Names}}" | grep sset
+  494  docker ps  -a --format "table {{.Names}}" | grep sset
+  495  docker images
+  496  docker tag 397d3d611d44 192.168.0.112:8888/sset/sset-gateway:v0.4
+  497  docker images
+  498  docker image tag 192.168.0.112:8888/sset/sset-gateway:v0.4  sset-gateway:v0.4
+  499  docker images
+  500  cd.
+  501  .
+  502  cd ..
+  503  cd home/seu
+  504  ls
+  505  vim radiolink.yaml 
+  506  ls
+  507  docker load < radiolink2.tar 
+  508  docker images | seu
+  509  docker images | radio
+  510  docker images
+  511  docker images | seu
+  512  docker images | grep seu
+  513  vim radiolink.yaml 
+  514  kubectl apply -f radiolink.yaml 
+  515  kubectl get pods -A | grep radiolink
+  516  kubectl delete deploy radiolink -n xw-simulation
+  517  kubectl get pods -A | grep radiolink
+  518  kubectl delete deploy radiolink -n xw-simulation
+  519  kubectl get pods -A | grep radiolink
+  520  kubectl delete deploy radiolink-f745d07c2aa044e3aa85dc0b881c1ba5-5f89885cf4-5bpcl -n xw-simulation
+  521  kubectl get pods -A | grep radioli
+  522  vim radiolink.yaml 
+  523  ls
+  524  cd /home
+  525  ls
+  526  cd sset
+  527  ls
+  528  cd kafak_dep/
+  529  s
+  530  ls
+  531  cd kafka/
+  532  ls
+  533  ll -a
+  534  docker images | grep kafka
+  535  docker save -o kakfanew.tar 7542849b069c
+  536  pwd
+  537  ls
+  538  vim docker-compose.yml 
+  539  cd ..
+  540  ls
+  541  cd ..
+  542  ls
+  543  vim docker-compose.yml 
+  544  docker images | grep model
+  545  docker tag 3fe4c12c0b74 10.37.0.216:8888/sset/model:v0.4
+  546  docker push 10.37.0.216:8888/sset/model:v0.4
+  547  docker login -u root -p Harbor12345
+  548  echo "Harbor12345" | docker login -username root --password-stdin 10.37.0.216:8888
+  549  echo "Harbor12345" | docker login --username root --password-stdin 10.37.0.216:8888
+  550  ls
+  551  cd /home/model/
+  552  ls
+  553  docker load -i radiolink2.tar
+  554  docker images
+  555  docker tag seu:1.1.0  192.168.0.112:8888/simulation_model/seu:v1.0.0
+  556  docker push 192.168.0.112:8888/simulation_model/seu:v1.0.0
+  557  docker images
+  558  docker images | grep seu
+  559  clear
+  560  docker images | grep seu
+  561  docker images
+  562  docker images | grep seu
+  563  docker load -i radiolink2.tar 
+  564  docker pull 192.168.0.112:8888/simulation_model/seu:v1.0.0
+  565  docker images | grep seu
+  566  docker load -i satellite-power.save 
+  567  docker images
+  568  docker tag satellitepower:1.0.0 192.168.0.112:8888/simulation_model/satellitepower:v1.0.0 
+  569  docker push 192.168.0.112:8888/simulation_model/satellitepower:v1.0.0
+  570  cd /home/sset
+  571  clear
+  572  ls
+  573  pwd
+  574  ls
+  575  docker-compose restart sset-simulation
+  576  docker-compose restart sset-scenario
+  577  ls
+  578  cd ..
+  579  cd home/seu
+  580  ls
+  581  kubectl get pods -A | grep radioli
+  582  kubectl delete deploy radiolink -n xw-simulation
+  583  kubectl get pods -A | grep radioli
+  584  kubectl delete deploy radiolink-74f577978d-sg25w -n xw-simulation
+  585  kubectl get pods -A | grep radioli
+  586  docker images | grep radio
+  587  docker images | grep seu
+  588  docker rmi seu:1.1.0
+  589  docker images | grep seu
+  590  ls
+  591  docker load < radiolink2.tar 
+  592  docker images | grep seu
+  593  ping 10.233.65.46
+  594  curl http://10.233.65.46:30010/model/init
+  595  cd ..
+  596  cd home/seu
+  597  ls
+  598  docker ps -a
+  599  docker ps -a | grep seu
+  600  docker ps -a | grep radiolink
+  601  docker images
+  602  docker images | grep seu
+  603  docker images | grep radiolink
+  604  kubectl apply -f radiolink.yaml 
+  605  docker images | grep radiolink
+  606  docker ps -a | grep radiolink
+  607  docker ps -a 
+  608  docker ps -a | grep radiolink
+  609  vim radiolink.yaml 
+  610  kubectl delete deploy radiolink -n xw-simulation
+  611  docker ps -a | grep radiolink
+  612  docker rm 8b4c7c78997b
+  613  docker ps -a | grep radiolink
+  614  kubectl get pods -A | grep radioli
+  615  kubectl get pods -A | grep seu
+  616  kubectl get pods -A | grep radiolink
+  617  kubectl apply -f radiolink.yaml 
+  618  kubectl get pods -A | grep radioli
+  619  docker ps -a | grep seu
+  620  docker ps -a | grep radiolink
+  621  docker exec -it 8ddaa666ebcc /bin/bash
+  622  history
+  623  docker images
+  624  docker images | grep sate
+  625  cd /home/model/
+  626  docker load -i satellite-power.save
+  627  docker images | grep sate
+  628  docker images
+  629  docker images | grep sate
+  630  docker image rm 0c38b6b21fc3
+  631  docker container rm d976633fb54a
+  632  docker images rm seu:1.1.0
+  633  docker image rmi seu:1.1.0
+  634  cd /home/model/
+  635  docker load -i radiolink.tar 
+  636  docker images
+  637  docker tag seu:1.1.0 192.168.0.112:8888/simulation_model/seu:v1.0.0
+  638  docker push 192.168.0.112:8888/simulation_model/seu:v1.0.0
+  639  cd /home/sset
+  640  ls
+  641  docker-compose restart sset-simulation
+  642  docker-compose restart sset-scenario
+  643  clear
+  644  docker logs -f --tail=100 sset-simulation
+  645  pwd
+  646  docker logs -f --tail=100 sset-scenario
+  647  docker-compose resatrt sset-nginx
+  648  docker-compose restart sset-nginx
+  649  docker logs -f --tail=100 sset-nginx
+  650  docker-compose restart sset-simulation
+  651  docker logs -f --tail=100 sset-simulation
+  652  docker-compsoe restart sset-scenario
+  653  docker-compose restart sset-scenario
+  654  docker logs -f --tail=100 sset-scenario
+  655  docker logs -f --tail=300 sset-scenario
+  656  cd /home/sset/server/app/
+  657  pwd
+  658  java -jar sset-modules-scenario.jar 
+  659  cd /home/sset
+  660  docker-compose restart sset-scenario
+  661  docker logs -f --tail=100 sset-scenario
+  662  docker-compose restart sset-scenario
+  663  docker logs -f --tail=100 sset-scenario
+  664  cd /home/model/
+  665  docker images
+  666  history 
+  667  docker images
+  668  docker image rm seu:1.1.0
+  669  docker load -i radiolink3.tar 
+  670  docker tag seu:1.1.0  192.168.0.112:8888/simulation_model/seu:v1.0.0
+  671  docker images
+  672  docker images rm 41ecde39bd39
+  673  docker image rm 41ecde39bd39
+  674  docker images
+  675  docker push 192.168.0.112:8888/simulation_model/seu:v1.0.0
+  676  cd /home/sset
+  677  docker-compose logs -f --tail=300 sset-simulation
+  678  docker-compose restart sset-simulation
+  679  docker-compose logs -f --tail=300 sset-simulation
+  680  docker-compose logs -f --tail=300 sset-mysql
+  681  vim docker-compose.yml 
+  682  docker-compose ps
+  683  docker logs -f sset-mysql
+  684  docker-compose logs -f  sset-mysql
+  685  docker logs -f sset-mysql
+  686  vim docker-compose.yml 
+  687  docker stop sset-mysql
+  688  docker-compose up  sset-mysql
+  689  docker rm e4ae93d86f0973070e6b29bccfee7578b8ae6ff8fe325edea0341a6cdb754ba6
+  690  docker-compose up  sset-mysql
+  691  docker-compose restart  sset-mysql
+  692  docker-compose logs -f --tail=300 sset-simulation
+  693  history
+  694  docker-compose restart sset-nacos
+  695  docker restart sset-nacos
+  696  docker logs -f sset-nacos
+  697  docker-compose restart sset-nginx
+  698  docker-compose -logs --tail=300  sset-nginx
+  699  docker-compose -logs --tail=100  sset-nginx
+  700  docker-compose logs -f --tail=300 sset-nginx
+  701  ls
+  702  cd /home
+  703  ls
+  704  cd sset
+  705  ls
+  706  docker ps | grep sset-mysql
+  707  docker logs -f sset-mysql
+  708  ls
+  709  vim docker-compose.yml 
+  710  ls
+  711  ping 10.233.65.46
+  712  ping 192.168.0.111
+  713  ping 192.168.0.116
+  714  ls
+  715  docker rm -f sset-nacos
+  716  ls
+  717  docker-compose up -d sset-nacos
+  718  ls
+  719  docker logs -f sset-nacos
+  720  ping 192.168.0.115
+  721  ping 192.168.0.120
+  722  cd
+  723  cd /home/sset/
+  724  ls
+  725  docker-compose restart sset-nginx
+  726  docker-compose logs -f --tail=100 sset-nginx
+  727  cd /home/seet
+  728  cd /home/sset
+  729  ls
+  730  docker-compose logs -f --tail=100 sset-simulation
+  731  vim docker-compose.yml 
+  732  docker ps
+  733  docker images
+  734  cd /home/model/
+  735  ls
+  736  docker images | grep seu
+  737  docker load -i radiolink5.tar 
+  738  docker images
+  739  docker tag seu:1.1.0  192.168.0.112:8888/simulation_model/seu:v1.0.0
+  740  docker push 192.168.0.112:8888/simulation_model/seu:v1.0.0
+  741  cd /home
+  742  cd /sset
+  743  cd ./sset
+  744  ls
+  745  docker-compose logs -f --tail==300 sset-simulation
+  746  docker-compose logs -f --tail=300 sset-simulation
+  747  history
+  748  history | grep error
+  749  docker-compose logs -f --tail=300 sset-simulation | grep error
+  750  docker-compose logs -f --tail=300 sset-simulation | grep satelliteId
+  751  docker-compose logs -f --tail=300 sset-simulation | grep error
+  752  docker-compose logs -f sset-simulation | grep error
+  753  clear
+  754  docker logs sset-simulation | grep -C 20 "error"
+  755  history | grep nginx
+  756   docker-compose restart sset-nginx
+  757  docker-compose logs -f --tail=300 sset-nginx
+  758  docker-compose restart sset-nginx
+  759  docker-compose logs -f --tail=300 sset-nginx
+  760  docker-compose restart sset-nginx
+  761  docker-compose logs -f --tail=100 sset-nginx
+  762  docker-compose restart sset-simulation
+  763  docker-compose logs -f --tail=100 sset-simulation
+  764  clear
+  765  docker-compose logs -f --tail=100 sset-simulation
+  766  clear
+  767  docker ps
+  768  docker-compose restart sset-simulation
+  769  docker-compose logs -f --tail=100 sset-simulation
+  770  cd /home/model/
+  771  ls
+  772  docker load -i radiolink_0805.tar
+  773  sudo rm -rf radiolink.tar
+  774  sudo rm -rf radiolink2.tar 
+  775  ls
+  776  docker load -i radiolink_0805.tar
+  777  df -h
+  778  docker images
+  779  vim /etc/docker/daemon.json
+  780  systemctl daemon-re
+  781  systemctl  daemon-reload 
+  782  systemctl restart docker
+  783  df -h
+  784  docker load -i radiolink_0805.tar 
+  785  docker images
+  786  docker tag seu:1.1.0  192.168.0.112:8888/simulation_model/seu:v1.0.0
+  787  docker images
+  788  docker push 192.168.0.112:8888/simulation_model/seu:v1.0.0
+  789  docker images
+  790  docker load -i radiolink_0805.tar 
+  791  docker images
+  792  docker tag seu:1.1.0  192.168.0.112:8888/simulation_model/seu:v1.0.0
+  793  docker push 192.168.0.112:8888/simulation_model/seu:v1.0.0
+  794  docker ps
+  795  history
+  796  cd /root
+  797  ls
+  798  cd /home
+  799  ls
+  800  docker images |grep seu
+  801  cd /home
+  802  ls
+  803  cd model/
+  804  ls
+  805  docker load -i radiolink_0805.tar
+  806  docker load <  radiolink_0805.tar
+  807  chmod 777 radiolink_0805.tar 
+  808  docker load <  radiolink_0805.tar
+  809  ls
+  810  cd /home
+  811  ls
+  812  cd /var/lib/
+  813  ls
+  814  cd docker
+  815  ls
+  816  cd ..
+  817  ls
+  818  mv docker /home/sset
+  819  cd home
+  820  cd /home/sset
+  821  ls
+  822  mkdir /home/lib/docker -p
+  823  cp docker/ /home/lib/docker/
+  824  cp docker/ /home/lib/docker/ -r
+  825  df -h
+  826  docker images -a
+  827  cd /home
+  828  ls
+  829  cd sset
+  830  ls
+  831  cd /home/lib/
+  832  ls
+  833  cd docker/
+  834  ls
+  835  cd docker/
+  836  ls
+  837  mv ./* ../ -r
+  838  cp  ./* ../ -r
+  839  cp  ./* ../ -fr
+  840  ls
+  841  cd ..
+  842  ls
+  843  cd ..
+  844  ls
+  845  mv docker/ dockerback
+  846  mv dockerback/docker/  ./
+  847  ls
+  848  cd docker
+  849  ls
+  850  docker images
+  851  systemctl daemon-reload
+  852  systemctl restart docker
+  853  docker ps
+  854  docker images
+  855  ls
+  856  history 
+  857  :q1
+  858  ls
+  859  cd /home
+  860  ls
+  861  rm -f test.txt 
+  862  history > 1.txt
+  863  cd /home
+  864  ls
+  865  cd lib/
+  866  ls
+  867  cd docker
+  868  ls
+  869  docker ps
+  870  ls
+  871  docker rm -f sset-nacos
+  872  ls
+  873  cd /home/sset
+  874  docker-compose up -d sset-nacos
+  875  docker-compose logs -f sset-nacos
+  876  docker rm -f sset-mysql
+  877  docker-compose up -d sset-mysql
+  878  docker-compose restart sset-naco
+  879  docker-compose restart sset-nacos
+  880  docker-compose logs -f sset-nacos
+  881  docker-compose logs -f sset-mysql
+  882  ls
+  883  cd /home/lib/
+  884  ls
+  885  chmod 777 docker
+  886  cd ..
+  887  ls
+  888  cd /home/lib/
+  889  ls
+  890  cd docker
+  891  ls
+  892  cd ..
+  893  ls
+  894  cd ..
+  895  ls
+  896  docker rm -f sset-mysql
+  897  docker images
+  898  systemctl restart docker
+  899  vim /etc/systemd/system/docker.service.d/devicemapper.conf
+  900  touch /etc/systemd/system/docker.service.d/devicemapper.conf
+  901  cd  /etc/systemd/system/docker.service.d/
+  902  mkdir /etc/systemd/system/docker.service.d/ -p
+  903  touch /etc/systemd/system/docker.service.d/devicemapper.conf
+  904  vim /etc/systemd/system/docker.service.d/devicemapper.conf
+  905  systemctl daemon-reload
+  906  systemctl restart docker
+  907  docker info
+  908  chmod 777 /home/lib
+  909  vim /etc/systemd/system/docker.service.d/devicemapper.conf
+  910  systemctl daemon-reload
+  911  systemctl restart docker
+  912  cd /etc/systemd/system/docker.service.d/
+  913  ls
+  914  mv devicemapper.conf  de.conf
+  915  systemctl daemon-reload
+  916  systemctl restart docker
+  917  ls
+  918  cd ..
+  919  ls
+  920  rm -rf docker.service.d/
+  921  systemctl daemon-reload
+  922  systemctl restart docker
+  923  docker restart sset-mysql
+  924  cd /home
+  925  ls
+  926  cd sset
+  927  ls
+  928  docker-compose up -d sset-mysql
+  929  docker-compose logs -f  sset-mysql
+  930  ls
+  931  cd docker/
+  932  ls
+  933  cd tmp/
+  934  ls
+  935  chmod 1777 tmp
+  936  cd ..
+  937  chmod 1777 tmp
+  938  ls
+  939  docker inspect sset-mysql
+  940  docker inspect sset-mysql > 1
+  941  vim 1 
+  942  chmod 777 /home/lib/docker/overlay2/27efa0196c9d7abe559fff48a70cba3253cfb5e1de5e47fbe858f10a8ab8454a/work
+  943  docker restart sset-mysql
+  944  docker logs -f  sset-mysql
+  945  docker inspect sset-mysql
+  946  :q!
+  947  cd /home/lib/docker/overlay2/27efa0196c9d7abe559fff48a70cba3253cfb5e1de5e47fbe858f10a8ab8454a/work
+  948  ls
+  949  chmod 777 work
+  950  ls
+  951  docker restart sset-mysql
+  952  docker logs -f  sset-mysql
+  953  docker rm -f   sset-mysql
+  954  cd /home
+  955  ls
+  956  cd sset
+  957  ls
+  958  docker-compose up -d sset-mysql
+  959  ls
+  960  docker-compose logs -f sset-mysql
+  961  chmod 777 /home/lib/docker/overlay2/27efa0196c9d7abe559fff48a70cba3253cfb5e1de5e47fbe858f10a8ab8454a/work
+  962  docker inspect sset-mysql
+  963  chmod 777 /home/lib/docker/overlay2/f328af69fee03507976359e2ba3f240650ff521bfada793de8597a3e4c1552d4/work
+  964  chmod 777 /home/lib/docker/overlay2/f328af69fee03507976359e2ba3f240650ff521bfada793de8597a3e4c1552d4/
+  965  chmod 777 /home/lib/docker/overlay2/
+  966  chmod 777 /home/lib/docker/
+  967  chmod 777 /home/lib/
+  968  docker ps | grep mysql
+  969  docker restart sset-mysql
+  970  docker logs -f  sset-mysql
+  971  ls
+  972  cd /usr/lib/systemd/system
+  973  ls
+  974  vim /etc/systemd/system/docker.service.d/devicemapper.conf
+  975  touch /etc/systemd/system/docker.service.d/devicemapper.conf
+  976  mkdir /etc/systemd/system/docker.service.d/
+  977  touch /etc/systemd/system/docker.service.d/devicemapper.conf
+  978  vim /etc/systemd/system/docker.service.d/devicemapper.conf
+  979  systemctl daemon-reload
+  980  systemctl restart docker
+  981  docker info
+  982  ls
+  983  cd  /etc/systemd/system/docker.service.d/
+  984  ls
+  985  rm -f devicemapper.conf 
+  986  ls
+  987  systemctl daemon-reload
+  988  systemctl restart docker
+  989  docker info
+  990  cd /home
+  991  ls
+  992  cd lib/
+  993  ls
+  994  chmod 777 docker -r
+  995  chmod 777 docker -R
+  996  docker container ls
+  997  kubectl get pod -A
+  998  history | grep history
+  999  cd /home
+ 1000  history > 1.txt

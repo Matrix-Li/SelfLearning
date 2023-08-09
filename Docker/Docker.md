@@ -133,8 +133,8 @@ docker run --mount source=volume_name,target=volume_name IMAGE
 
 ##### 9. Docker login
 
-```
-echo "Harbor12345" | docker login --username admin --password-stdin 192.168.0.112:8888
+```shell
+$ echo "Harbor12345" | docker login --username admin --password-stdin 192.168.0.112:8888
       password                                                       url
 ```
 
@@ -187,3 +187,13 @@ sudo systemctl restart docker
 # 重载修改过的配置文件 
 sudo systemctl daemon-reload 
 ```
+
+```
+docker ps  -a --format "table {{.Names}}" | grep sset
+docker images | grep sset
+docker ps -n=2
+docker ps -n=2
+docker image ls | grep "matrixbuaa" | awk '{print $3}'
+docker run -it --entrypoint sh flask:lky
+```
+
